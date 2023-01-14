@@ -2,19 +2,22 @@
 // @name                GitHub Internationalization
 // @name:zh-CN          GitHub汉化插件
 // @name:ja             GitHub日本語
-// @namespace           https://github.com/k1995/github-i18n-plugin/
+// @name:ru             GitHub Русификатор
+// @namespace           https://github.com/blinovartem/ghub-rus/
 // @version             0.23
 // @description         Translate GitHub.com
 // @description:zh      GitHub汉化插件，包含人机翻译
 // @description:zh-CN   GitHub汉化插件，包含人机翻译
 // @description:ja      GitHub日本語プラグイン
-// @author              k1995
+// @description:ru      GitHub Русификатор
+// @author              blinovartem
 // @match               https://github.com/*
 // @match               https://gist.github.com/*
 // @grant               GM_xmlhttpRequest
 // @grant               GM_getResourceText
-// @resource            zh-CN https://www.githubs.cn/raw-githubusercontent/k1995/github-i18n-plugin/master/locales/zh-CN.json?v=20220131
-// @resource            ja https://www.githubs.cn/raw-githubusercontent/k1995/github-i18n-plugin/master/locales/ja.json
+// @resource            zh-CN https://github.com/blinovartem/ghub-rus/raw/main/locales/zh-CN.json
+// @resource            ja https://github.com/blinovartem/ghub-rus/raw/main/locales/ja.json
+// @resource            ru https://github.com/blinovartem/ghub-rus/raw/main/locales/ru.json
 // @require             https://cdn.staticfile.org/timeago.js/4.0.2/timeago.min.js
 // @require             https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js
 // @license MIT
@@ -23,7 +26,7 @@
 (function() {
   'use strict';
 
-  const SUPPORT_LANG = ["zh-CN", "ja"];
+  const SUPPORT_LANG = ["zh-CN", "ja", "ru"];
   const lang = (navigator.language || navigator.userLanguage);
   const locales = getLocales(lang)
 
